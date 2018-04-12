@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mozart"
+    tools:context="com.example.android.notereadingquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="MUSIC READING QUIZ"
+            android:textColor="#3f2005"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 1\nName this note:"
+                android:textColor="#3f2005"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/half_note" />
+
+                <RadioGroup
+                    android:id="@+id/question1_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/question1a_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eighth note"
+                        android:textColor="#3f2005"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/question1b_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quarter note"
+                        android:textColor="#3f2005"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/question1c_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Half note"
+                        android:textColor="#3f2005"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 2\nName this note:"
+                android:textColor="#3f2005"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/d_treble" />
+
+                <EditText
+                    android:id="@+id/question2_input"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="A, B, C, D, E, F or G"
+                    android:textColor="#3f2005" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 3\nWhich of these last longer than a quarter note?"
+                android:textColor="#3f2005"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <CheckBox
+                    android:id="@+id/question3a_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eighth note"
+                    android:textColor="#3f2005"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/question3b_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Half note"
+                    android:textColor="#3f2005"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/question3c_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whole note"
+                    android:textColor="#3f2005"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 4\nWhat is the name of this sign?"
+                android:textColor="#3f2005"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bas_clef" />
+
+                <RadioGroup
+                    android:id="@+id/question4_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/question4a_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bass clef"
+                        android:textColor="#3f2005"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/question4b_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time signature"
+                        android:textColor="#3f2005"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/question4c_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staff"
+                        android:textColor="#3f2005"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#915a2b"
+            android:onClick="submitAnswers"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</ScrollView>
