@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     int score;
-    String question1Answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
